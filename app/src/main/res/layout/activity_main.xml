@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arkaplan"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="160dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/kaushan_script"
+        android:text="Otelini Bul"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_giriş"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.086" />
+
+    <Button
+        android:background="@drawable/buttonbg"
+        android:id="@+id/button_giriş"
+        android:layout_width="227dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="24dp"
+        android:rotation="0"
+        android:rotationX="0"
+        android:rotationY="0"
+        android:text="Nereye"
+        app:layout_constraintBottom_toTopOf="@+id/button_tarih"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:background="@drawable/buttonbg"
+        android:id="@+id/button_tarih"
+        android:layout_width="227dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="24dp"
+        android:rotation="0"
+        android:rotationX="0"
+        android:rotationY="0"
+        android:text="Tarih"
+        app:layout_constraintBottom_toTopOf="@+id/button_odaKisi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:background="@drawable/buttonbg"
+        android:id="@+id/button_odaKisi"
+        android:layout_width="227dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="28dp"
+        android:rotation="0"
+        android:rotationX="0"
+        android:rotationY="0"
+        android:text="Oda, Kişi"
+        app:layout_constraintBottom_toTopOf="@+id/button_ara"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:background="@drawable/buttonbg2"
+        android:id="@+id/button_ara"
+        android:layout_width="172dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="200dp"
+        android:text="Ara"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:background="@drawable/buttonbg"
+        android:id="@+id/button_girisYap"
+        android:layout_width="103dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="60dp"
+        android:text="Giriş Yap"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:background="@drawable/buttonbg2"
+        android:id="@+id/button_kaydol"
+        android:layout_width="103dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="60dp"
+        android:text="Kaydol"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
