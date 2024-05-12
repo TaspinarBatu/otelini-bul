@@ -11,5 +11,10 @@ class OtelArama : AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.otel_arama)
 
+        val buttonKayıt = findViewById<Button>(R.id.buttonRezOl)
+        buttonKayıt.setOnClickListener {
+            val intent = Intent(this, OtelSec::class.java)
+            startActivity(intent)
+        }
     }
 }
