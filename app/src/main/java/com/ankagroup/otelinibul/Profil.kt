@@ -16,5 +16,6 @@ class Profil : AppCompatActivity (){
             val intent = Intent(this, Favoriler::class.java)
             startActivity(intent)
         }
+
     }
 }
