@@ -5,14 +5,14 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
-class GirisYapSayfasi : AppCompatActivity(){
+class KaydolmaSayfasi : AppCompatActivity () {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.giris_yap)
+        setContentView(R.layout.kaydol)
 
         //Giriş yapma ekranındaki Giriş butonuna basınca Ansayfaya giden kod
-        val buttonKayıtol = findViewById<Button>(R.id.button_girAna)
-        buttonKayıtol.setOnClickListener {
+        val buttonKayıt = findViewById<Button>(R.id.buttonUygKay)
+        buttonKayıt.setOnClickListener {
             val intent = Intent(this, Anasayfa::class.java)
             startActivity(intent)
         }

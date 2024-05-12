@@ -22,7 +22,30 @@
             </intent-filter>
 
         </activity>
+        <!-- Giriş yapma sayfası bildirildi -->
         <activity android:name=".GirisYapSayfasi" />
+        <!-- Kaydolma sayfası bildirildi -->
+        <activity android:name=".KaydolmaSayfasi"
+            android:exported="true"/>
+        <!-- Anasayfa bildirildi -->
+        <activity android:name=".Anasayfa"
+            android:exported="true"/>
+        <!-- Profil sayfası bildirildi -->
+        <activity android:name=".Profil"
+            android:exported="true"/>
+        <!-- Favoriler sayfası bildirildi -->
+        <activity android:name=".Favoriler"
+            android:exported="true"/>
+        <!-- Seyahatler sayfası bildirildi -->
+        <activity android:name=".Seyahatler"
+            android:exported="true"/>
+        <!-- OtelArama sayfası bildirildi -->
+        <activity android:name=".OtelArama"
+            android:exported="true"/>
+        <!-- OtelSec sayfası bildirildi -->
+        <activity android:name=".OtelSec"
+            android:exported="true"/>
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

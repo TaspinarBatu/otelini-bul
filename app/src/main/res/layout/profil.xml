@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arkaplan">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/test_account" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout5"
+        android:layout_width="312dp"
+        android:layout_height="327dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/layoutbg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/buttonKisiBil"
+                android:layout_width="288dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/buttonbg"
+                android:text="Kişisel Bilgiler"
+                app:layout_constraintBottom_toTopOf="@+id/buttonSosMed"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/buttonSosMed"
+                android:layout_width="288dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/buttonbg"
+                android:text="Sosyal Medya"
+                app:layout_constraintBottom_toTopOf="@+id/buttonHak"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/buttonHak"
+                android:layout_width="288dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="60dp"
+                android:background="@drawable/buttonbg"
+                android:text="Hakkımızda"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+
+    <ImageButton
+        android:id="@+id/imageButtonArama"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/buttonColor2"
+        android:src="@drawable/search"
+        app:layout_constraintBottom_toTopOf="@+id/textViewAnaAra"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonSeyahatler"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButtonSeyahatler"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/buttonColor2"
+        android:src="@drawable/beach"
+        app:layout_constraintBottom_toTopOf="@+id/textViewAnaSeyahat"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonFavori" />
+
+    <ImageButton
+        android:id="@+id/imageButtonFavori"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/buttonColor2"
+        android:src="@drawable/favorite"
+        app:layout_constraintBottom_toTopOf="@+id/textViewFavori"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonProfil" />
+
+    <ImageButton
+        android:id="@+id/imageButtonProfil"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/buttonColor2"
+        android:src="@drawable/user"
+        app:layout_constraintBottom_toTopOf="@+id/textViewProfil"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewAnaAra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="28dp"
+        android:text="Ara"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewAnaSeyahat"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewAnaSeyahat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="28dp"
+        android:text="Seyahatler"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewFavori" />
+
+    <TextView
+        android:id="@+id/textViewFavori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="28dp"
+        android:text="Favoriler"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewProfil" />
+
+    <TextView
+        android:id="@+id/textViewProfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="28dp"
+        android:text="Profil"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/buttonKulİs"
+        android:layout_width="214dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/buttonbg"
+        android:text="Kullanıcı İsmi"
+        app:layout_constraintBottom_toTopOf="@+id/buttonKulMail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonKulMail"
+        android:layout_width="210dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/buttonbg"
+        android:text="Kullanıcı E-Mail"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout5"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

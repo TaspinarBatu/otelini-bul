@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arkaplan">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="160dp"
+        android:layout_height="47dp"
+        android:fontFamily="@font/kaushan_script"
+        android:text="Otelini Bul"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout4"
+        android:layout_width="263dp"
+        android:layout_height="349dp"
+        android:layout_marginBottom="170dp"
+        android:background="@drawable/layoutbg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button_nereye"
+                android:layout_width="227dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/buttonbg"
+                android:rotation="0"
+                android:rotationX="0"
+                android:rotationY="0"
+                android:text="Nereye"
+                app:layout_constraintBottom_toTopOf="@+id/button_tarih"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.444"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/button_tarih"
+                android:layout_width="227dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/buttonbg"
+                android:rotation="0"
+                android:rotationX="0"
+                android:rotationY="0"
+                android:text="Tarih"
+                app:layout_constraintBottom_toTopOf="@+id/button_odaKisi"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.444"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/button_odaKisi"
+                android:layout_width="227dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/buttonbg"
+                android:rotation="0"
+                android:rotationX="0"
+                android:rotationY="0"
+                android:text="Oda, Kişi"
+                app:layout_constraintBottom_toTopOf="@+id/button_ara"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/button_ara"
+                android:layout_width="172dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/buttonbg2"
+                android:text="Ara"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textViewAnaAra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="66dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="28dp"
+        android:text="Ara"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewAnaSeyahat"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewAnaSeyahat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="28dp"
+        android:text="Seyahatler"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewFavori" />
+
+    <TextView
+        android:id="@+id/textViewFavori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="28dp"
+        android:text="Favoriler"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewProfil" />
+
+    <TextView
+        android:id="@+id/textViewProfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="28dp"
+        android:text="Profil"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButtonArama"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/buttonColor2"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewAnaAra"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonSeyahatler"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/search" />
+
+    <ImageButton
+        android:id="@+id/imageButtonSeyahatler"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/buttonColor2"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewAnaSeyahat"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonFavori"
+        app:srcCompat="@drawable/beach" />
+
+    <ImageButton
+        android:id="@+id/imageButtonFavori"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/buttonColor2"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewFavori"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonProfil"
+        app:srcCompat="@drawable/favorite" />
+
+    <ImageButton
+        android:id="@+id/imageButtonProfil"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/buttonColor2"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewProfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/user" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

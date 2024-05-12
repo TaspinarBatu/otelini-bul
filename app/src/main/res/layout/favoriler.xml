@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arkaplan">
+
+    <FrameLayout
+        android:id="@+id/frameLayout6"
+        android:layout_width="337dp"
+        android:layout_height="139dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="450dp"
+        android:background="@drawable/layoutbg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="153dp"
+                android:layout_height="96dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="27dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/akar_hotel" />
+
+            <TextView
+                android:id="@+id/textViewOtelAd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="13dp"
+                android:text="Akar Hotel"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/textViewSehir"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewSehir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="13dp"
+                android:text="Aksaray, Ihlara"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/textViewFiyat"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewFiyat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="13dp"
+                android:text="1200 TL"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewSehir" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textViewSeyahatlerim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="17dp"
+        android:text="Favorilerim"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButtonArama"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/buttonColor2"
+        android:src="@drawable/search"
+        app:layout_constraintBottom_toTopOf="@+id/textViewAnaAra"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonSeyahatler"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButtonSeyahatler"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/buttonColor2"
+        android:src="@drawable/beach"
+        app:layout_constraintBottom_toTopOf="@+id/textViewAnaSeyahat"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonFavori" />
+
+    <ImageButton
+        android:id="@+id/imageButtonFavori"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/buttonColor2"
+        android:src="@drawable/favorite"
+        app:layout_constraintBottom_toTopOf="@+id/textViewFavori"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonProfil" />
+
+    <ImageButton
+        android:id="@+id/imageButtonProfil"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/buttonColor2"
+        android:src="@drawable/user"
+        app:layout_constraintBottom_toTopOf="@+id/textViewProfil"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewAnaAra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="28dp"
+        android:text="Ara"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewAnaSeyahat"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewAnaSeyahat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="28dp"
+        android:text="Seyahatler"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewFavori" />
+
+    <TextView
+        android:id="@+id/textViewFavori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="28dp"
+        android:text="Favoriler"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewProfil" />
+
+    <TextView
+        android:id="@+id/textViewProfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="28dp"
+        android:text="Profil"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

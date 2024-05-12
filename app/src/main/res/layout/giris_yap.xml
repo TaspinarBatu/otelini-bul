@@ -37,7 +37,7 @@
             android:rotation="0">
 
             <FrameLayout
-                android:id="@+id/frameLayout2"
+                android:id="@+id/frameLayoutAd"
                 android:layout_width="203dp"
                 android:layout_height="32dp"
                 android:background="@drawable/inputstyle"
@@ -62,7 +62,7 @@
                 android:layout_height="32dp"
                 android:layout_marginBottom="50dp"
                 android:background="@drawable/inputstyle"
-                app:layout_constraintBottom_toTopOf="@+id/button"
+                app:layout_constraintBottom_toTopOf="@+id/button_girAna"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent">
 
@@ -76,7 +76,7 @@
             </FrameLayout>
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/button_girAna"
                 android:layout_width="113dp"
                 android:layout_height="51dp"
                 android:layout_marginBottom="52dp"
@@ -91,7 +91,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="e-posta adresi"
-                app:layout_constraintBottom_toTopOf="@+id/frameLayout2"
+                app:layout_constraintBottom_toTopOf="@+id/frameLayoutAd"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.139"
                 app:layout_constraintStart_toStartOf="parent"

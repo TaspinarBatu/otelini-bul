@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arkaplan">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="160dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/kaushan_script"
+        android:text="Otelini Bul"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="297dp"
+        android:layout_height="477dp"
+        android:background="@drawable/layoutbg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/frameLayoutAd"
+                android:layout_width="262dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/inputstyle"
+                app:layout_constraintBottom_toTopOf="@+id/frameLayoutKaySif"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+
+                <EditText
+                    android:id="@+id/editTextTextEmailAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:inputType="textEmailAddress"
+                    android:textSize="16sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameLayoutSoyad"
+                android:layout_width="262dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/inputstyle"
+                app:layout_constraintBottom_toTopOf="@+id/frameLayoutAd"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+
+                <EditText
+                    android:id="@+id/editTextPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:inputType="phone"
+                    android:textSize="16sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameLayoutCepTel"
+                android:layout_width="262dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/inputstyle"
+                app:layout_constraintBottom_toTopOf="@+id/frameLayoutSoyad"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.457"
+                app:layout_constraintStart_toStartOf="parent" >
+
+                <EditText
+                    android:id="@+id/editTextTextSoyad"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:textSize="16sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameLayoutKayEpost"
+                android:layout_width="262dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/inputstyle"
+                app:layout_constraintBottom_toTopOf="@+id/frameLayoutCepTel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" >
+
+                <EditText
+                    android:id="@+id/editTextTextAd"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:textSize="16sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameLayoutKaySif"
+                android:layout_width="262dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/inputstyle"
+                app:layout_constraintBottom_toTopOf="@+id/buttonUygKay"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+
+                <EditText
+                    android:id="@+id/editTextTextPassword2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:textSize="16sp" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/textViewKayAd"
+                android:layout_width="105dp"
+                android:layout_height="22dp"
+                android:text="Ad"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/frameLayoutKayEpost"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.083"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewKaySoyAd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Soy Ad"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/frameLayoutCepTel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.068"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewKayCepTel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cep Telefonu"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/frameLayoutSoyad"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.078"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewKayEpost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="E-posta Adresi"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/frameLayoutAd"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.088"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewKaySif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Şifre"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/frameLayoutKaySif"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.06"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/buttonUygKay"
+                android:layout_width="113dp"
+                android:layout_height="51dp"
+                android:layout_marginBottom="44dp"
+                android:background="@color/buttonColor2"
+                android:text="Kaydol"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
