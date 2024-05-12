@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arkaplan">
+
+    <FrameLayout
+        android:layout_width="269dp"
+        android:layout_height="550dp"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/layoutbg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewHakkimizda"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Merhaba Değerli Misafirler, Bandırma 17 Eylül Üniversitesi'nde okuyan ve arkadaşlık bağlarıyla birbirine sıkı sıkıya bağlı olan Yusuf Sağlam, Emre Akar ve Batuhan Taşpınar'dan oluşan bir ekip olarak sizlere sevgi ve saygılarımızı sunarız!  Gururla sunarız ki, bu üç arkadaşın bir araya gelerek geliştirdiği otel rezervasyon uygulaması artık hizmetinizde! Amacımız, siz değerli misafirlerimize konforlu ve kolay bir şekilde konaklama imkanı sunmaktır.  Uygulamamızı kullanarak istediğiniz otelde yerinizi ayırtabilir, seyahat planlarınızı kolayca organize edebilirsiniz. Bizler, Bandırma 17 Eylül Üniversitesi öğrencileri olarak, sizin memnuniyetiniz ve rahatınızı ön planda tutarak bu uygulamayı geliştirdik.  Siz değerli misafirlerimizin huzuru ve mutluluğu bizim için çok önemlidir. Bu nedenle, her adımda en iyi hizmeti sunmak için çaba harcadık ve çalışmaya devam ediyoruz.  Yusuf Sağlam, Emre Akar ve Batuhan Taşpınar olarak, sizlere kaliteli bir deneyim sunmaktan büyük bir mutluluk duyuyoruz. Uygulamamızı tercih ettiğiniz için teşekkür eder, keyifli ve sorunsuz konaklamalar dileriz.  Sevgi ve saygılarımızla,  Yusuf Sağlam, Emre Akar ve Batuhan Taşpınar"
+                android:textSize="12sp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="16dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

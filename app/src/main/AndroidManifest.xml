@@ -45,6 +45,12 @@
         <!-- OtelSec sayfası bildirildi -->
         <activity android:name=".OtelSec"
             android:exported="true"/>
+        <!-- SosyalMedya sayfası bildirildi -->
+        <activity android:name=".SosyalMedya"
+            android:exported="true"/>
+        <!-- Hakkımızda sayfası bildirildi -->
+        <activity android:name=".Hakkimizda"
+            android:exported="true"/>
 
         <meta-data
             android:name="preloaded_fonts"
